@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2a2c30;
+}
+
+#card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#card .card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#card .card-content p {
+  margin-bottom: 1.5rem;
+}
+
+#card .card-content #nrbarcode {
+  color: #ff2000;
+}
+
+#card #btn-ean {
+  margin-top: 10rem;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+  background: #ff2000;
+  color: #fff;
+}
+
+#card #btn-ean:hover {
+  opacity: 0.85;
+}

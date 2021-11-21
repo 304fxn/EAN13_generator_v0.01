@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: $direction;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2a2c30;
+}
+
+#card {
+  //color: #fff;
+  //background: #1c4294;
+  background: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  @include flexCenter(column);
+
+  .card-content {
+    @include flexCenter(column);
+    p {
+      margin-bottom: 1.5rem;
+    }
+    #nrbarcode {
+      color: #ff2000;
+    }
+  }
+  #btn-ean {
+    margin-top: 10rem;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 700;
+    background: #ff2000;
+    color: #fff;
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+}
